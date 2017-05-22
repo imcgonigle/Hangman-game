@@ -2,11 +2,87 @@
 <html lang="en-us">
 
 <head>
-
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
   	<title>Hangman</title>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+   <script type="text/javascript" src="assets/javascript/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
 <body>
+	<div class="container-fluid">
+		<div class="jumbotron" id="movie-title">
+			<div id="title-container">
+  				<div class="starIcons"> 
+  					<i class="fa fa-star fa-4x" aria-hidden="true">
+  					</i>
+  				</div>
+  				<h1>Movie Night Hangman</h1>
+  				<div class="starIcons">
+  					<i class="fa fa-star fa-4x" aria-hidden="true">
+  					</i>
+  				</div>
+  			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="game-container">
+			<div class="col-lg-12" id="game-board">	
+				<div class="col-lg-6" id="gameboard-left">
+					<img id="movie-poster">
+					
+				</div>
+				<div class="col-lg-6" id="gameboard-right">
+					<div class="opening-text" id="top-section">
+						<p id="game-start">
+							Press space bar to get started!
+						</p>
+						<div class="opening-text" >
+							Wins:<p id="wins">
+								</p>
+						</div>
+						<div class="opening-text" >
+							Losses:<p id="losses">
+								</p>
+						</div>
+						<div class="opening-text" >
+							Current Word<p id="current-word">
+								</p>
+						</div>
+					</div>
+						<div class="col-lg-12">
+					<div class="opening-text" id="bottom-section">
+						<p id="guesses-remaining">
+							Number of Guesses Remaining:
+						</p>
+						<div class="opening-text" >
+							Letters Already Guessed:<p id="letter-guesses">
+								</p>
+						</div>
+					</div>
+				</div>
+				
+			
+
+			</div>
+
+			
+		</div>
+	</div>
 
 
 

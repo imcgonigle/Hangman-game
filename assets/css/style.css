@@ -1,0 +1,56 @@
+#movie-title{
+	background-color:#e40a1e;
+	text-align:center;
+
+}
+#movie-title h1{
+	font-family: Georgia, Serif;
+	font-weight:700;
+
+}
+#title-container {
+	display: inline-flex;
+}
+.starIcons {
+	padding-top: 25px;
+	color:white;
+}
+
+.game-container{
+	background-color:grey;
+}
+
+#game-board{
+	height:100%;
+	border:solid 5px grey;
+	background-color:#e40a1e;
+}
+
+.opening-text, .opening-text p{
+	font-family: Georgia, Serif;
+	font-size: 20pt;
+}
+
+#gameboard-right{
+
+}
+
+#top-section{
+	border:solid 5px grey;
+}
+
+#bottom-section{
+	border:solid 5px grey;
+}
+
+#current-word {
+	margin-right: 2px;
+	letter-spacing: 0.25em;
+	margin: 0.25em 0 0.4em 30px;
+}
+
+#movie-poster{
+	margin: 85px;
+	border:solid 15px white;
+
+}
