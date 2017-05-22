@@ -123,7 +123,7 @@ console.log("Dom content should be loaded")
       		if (event.keyCode === 32){
       			newGame()
       		} else{
-				checkGuess(event.key)
+				checkGuess(event.key.toLowerCase())
       		}
  		}
     
