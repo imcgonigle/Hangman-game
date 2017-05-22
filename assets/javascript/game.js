@@ -4,6 +4,7 @@ console.log("Before content loads!")
  	var GuessRemainEl;
  	var LetterGuessEl;
  	var currentWord;
+ 	var puzzleSolved;
 
 document.addEventListener("DOMContentLoaded", function() {
 console.log("Dom content should be loaded")
@@ -60,6 +61,7 @@ console.log("Dom content should be loaded")
 			}
 				if (placesholders.join("") === computerGuess.toLowerCase()){
 	 	    		wins++; 
+	 	    		puzzleSolved = true;
 	 	    		winsEl.innerHTML = wins;
 	 	    		moviePosterEl.src = "assets/images/" + computerGuess.toLowerCase() + ".jpeg"
 	 	    		winningAudio.play();
@@ -122,7 +124,7 @@ console.log("Dom content should be loaded")
  		document.onkeyup = function(event){
       		if (event.keyCode === 32){
       			newGame()
-      		} else{
+      		} else if (!puzzleSolved){
 				checkGuess(event.key.toLowerCase())
       		}
  		}
