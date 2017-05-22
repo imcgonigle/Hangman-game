@@ -53,7 +53,7 @@ console.log("Dom content should be loaded")
  	    	for (var i = 0; i < computerGuess.length; i++) {	
 
  	    		if (computerGuess.charAt(i).toLowerCase() === key) {
- 	    			badGuess = false
+ 	    			badGuess = false;
  	    			placesholders[i] = key;
  	    		}
 	 	    	console.log(placesholders.join(""),computerGuess, "I'm inside the loop")
@@ -61,7 +61,7 @@ console.log("Dom content should be loaded")
 				if (placesholders.join("") === computerGuess.toLowerCase()){
 	 	    		wins++; 
 	 	    		winsEl.innerHTML = wins;
-	 	    		moviePosterEl.src = "assets/images/" + computerGuess + ".jpeg"
+	 	    		moviePosterEl.src = "assets/images/" + computerGuess.toLowerCase() + ".jpeg"
 	 	    		winningAudio.play();
 
 	 	    	}
@@ -75,7 +75,7 @@ console.log("Dom content should be loaded")
 				if (guesses == 0){
 	 	    		losses++; 
 	 	    		LossesEl.innerHTML = losses;
-	 	    		moviePosterEl.src = "assets/images/" + computerGuess + ".jpeg"
+	 	    		moviePosterEl.src = "assets/images/" + computerGuess.toLowerCase() + ".jpeg"
 	 	    		losingAudio.play();
 
 	 	    		document.onkeyup = function(event){
