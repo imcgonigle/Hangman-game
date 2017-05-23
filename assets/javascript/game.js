@@ -99,6 +99,7 @@ console.log("Dom content should be loaded")
  	}
 
  	function newGame(){
+ 		puzzleSolved = false;
  		computerGuess = words[Math.floor(Math.random() * words.length)];
  		placesholders = "";
  		guesses = 12;
